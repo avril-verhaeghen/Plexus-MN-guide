@@ -4,7 +4,7 @@ Shell script to install a [Prufus Masternode](http://prufus.com/) on a Linux ser
 ***
 ## Installation:
 ```
-wget -q https://raw.githubusercontent.com/zoldur/Prufus/master/prufus_install.sh
+wget -q https://raw.githubusercontent.com/altcuim/Plexus-MN-guide/master/prufus_install.sh
 bash prufus_install.sh
 ```
 ***
