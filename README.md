@@ -1,5 +1,5 @@
 # Prufus
-Shell script to install a [Prufus Masternode](https://prufuscoin.com/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
+Shell script to install a [Prufus Masternode](https://prufuscoin.com/) V2.0.0 on a Linux server running Ubuntu 16.04. Use it on your own risk.
 
 ***
 ## Installation:
