@@ -10,7 +10,7 @@ COIN_REPO='https://github.com/Cryptohelper1/Prufus-core.git'
 COIN_TGZ='https://github.com/zoldur/Prufus/releases/download/v1.0/prufus.tgz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Prufus'
-COIN_PORT=12457
+COIN_PORT=31001
 RPC_PORT=12458
 
 NODEIP=$(curl -s4 icanhazip.com)
