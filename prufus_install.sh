@@ -24,8 +24,8 @@ NC='\033[0m'
 function compile_node() {
   echo -e "Prepare to compile $COIN_NAME"
   git clone $COIN_REPO $TMP_FOLDER >/dev/null 2>&1
-  compile_error
   echo -e "Clone completed"
+  compile_error
   cd $TMP_FOLDER
   chmod +x ./autogen.sh 
   chmod +x ./share/genbuild.sh
