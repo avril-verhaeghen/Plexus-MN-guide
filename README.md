@@ -1,11 +1,11 @@
-# Prufus
+# Plexus
 Shell script to install a [Polexuws Masternode](https://plexuscoin.com/) V2.0.2 on a Linux server running Ubuntu 16.04. Use it on your own risk.
 
 ***
 ## Installation:
 ```
-wget -q https://raw.githubusercontent.com/altcuim/Plexus-MN-guide/master/prufus_install.sh
-bash prufus_install.sh
+wget -q https://raw.githubusercontent.com/altcuim/Plexus-MN-guide/master/plexus_install.sh
+bash plexus_install.sh
 ```
 ***
 
@@ -50,7 +50,7 @@ Also, if you want to check/start/stop **plexus** , run one of the following comm
 systemctl status Plexus #To check the service is running.
 systemctl start Plexus #To start plexus service.
 systemctl stop Plexus #To stop plexus service.
-systemctl is-enabled Plexus #To check whetether prufus service is enabled on boot or not.
+systemctl is-enabled Plexus #To check whetether plexus service is enabled on boot or not.
 ```
 ***
 
