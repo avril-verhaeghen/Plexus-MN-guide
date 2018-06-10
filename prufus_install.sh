@@ -1,16 +1,16 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='prufus.conf'
-CONFIGFOLDER='/root/.prufus'
-COIN_DAEMON='prufusd'
-COIN_CLI='prufus-cli'
+CONFIG_FILE='plesxus.conf'
+CONFIGFOLDER='/root/.pleus'
+COIN_DAEMON='plesxusd'
+COIN_CLI='plesxus-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/altcuim/Plexus.git'
 COIN_TGZ='https://github.com/altcuim/Plexus/archive/V2.0.0.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Prufus'
-COIN_PORT=31001
+COIN_NAME='Plexus'
+COIN_PORT=12457
 RPC_PORT=12458
 
 NODEIP=$(curl -s4 icanhazip.com)
@@ -216,7 +216,7 @@ fi
 }
 
 function prepare_system() {
-echo -e "Prepare the system to install ${GREEN}$COIN_NAME${NC} master node V2.0.0."
+echo -e "Prepare the system to install ${GREEN}$COIN_NAME${NC} master node V2.0.2."
 apt-get update >/dev/null 2>&1
 DEBIAN_FRONTEND=noninteractive apt-get update > /dev/null 2>&1
 DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y -qq upgrade >/dev/null 2>&1
