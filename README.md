@@ -1,5 +1,5 @@
 # Plexus
-Shell script to install a [Polexuws Masternode](https://plexuscoin.com/) V2.0.2 on a Linux server running Ubuntu 16.04. Use it on your own risk.
+Shell script to install a [Plexus Masternode](https://plexuscoin.com/) V2.0.2 on a Linux server running Ubuntu 16.04. Use it on your own risk.
 
 ***
 ## Installation:
