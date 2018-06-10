@@ -32,7 +32,7 @@ function compile_node() {
   chmod +x ./src/leveldb/build_detect_platform
   ./autogen.sh
   compile_error
-  ./configure
+  ./configure --without-wallet
   compile_error
   make
   compile_error
