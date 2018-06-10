@@ -1,5 +1,5 @@
 # Prufus
-Shell script to install a [Prufus Masternode](https://prufuscoin.com/) V2.0.0 on a Linux server running Ubuntu 16.04. Use it on your own risk.
+Shell script to install a [Polexuws Masternode](https://plexuscoin.com/) V2.0.2 on a Linux server running Ubuntu 16.04. Use it on your own risk.
 
 ***
 ## Installation:
@@ -12,9 +12,9 @@ bash prufus_install.sh
 ## Desktop wallet setup
 
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps for Windows Wallet
-1. Open the **Prufus Desktop Wallet**.
+1. Open the **Plexus Desktop Wallet**.
 2. Go to RECEIVE and create a New Address: **MN1**
-3. Send **10000** **PRUFUS** to **MN1**.
+3. Send **10000** **Plexus** to **MN1**.
 4. Wait for 15 confirmations.
 5. Go to **Tools -> "Debug console - Console"**
 6. Type the following command: **masternode outputs**
@@ -39,18 +39,18 @@ Alias Address Privkey TxHash Output_index
 
 ## Usage:
 ```
-prufus-cli mnsync status
-prufus-cli getinfo
-prufus-cli masternode status #This command will show your masternode status
+plexus-cli mnsync status
+plexus-cli getinfo
+plexus-cli masternode status #This command will show your masternode status
 ```
 
-Also, if you want to check/start/stop **prufus** , run one of the following commands as **root**:
+Also, if you want to check/start/stop **plexus** , run one of the following commands as **root**:
 
 ```
-systemctl status Prufus #To check the service is running.
-systemctl start Prufus #To start prufus service.
-systemctl stop Prufus #To stop prufus service.
-systemctl is-enabled Prufus #To check whetether prufus service is enabled on boot or not.
+systemctl status Plexus #To check the service is running.
+systemctl start Plexus #To start plexus service.
+systemctl stop Plexus #To stop plexus service.
+systemctl is-enabled Plexus #To check whetether prufus service is enabled on boot or not.
 ```
 ***
 
@@ -58,8 +58,4 @@ systemctl is-enabled Prufus #To check whetether prufus service is enabled on boo
 
 Any donation is highly appreciated.  
 
-**PRUFUS**: EHkqw6HEeGy3c17xK6Mh1ohyzWik51HG66  
-**BTC**: 3MQLEcHXVvxpmwbB811qiC1c6g21ZKa7Jh  
-**ETH**: 0x26B9dDa0616FE0759273D651e77Fe7dd7751E01E  
-**LTC**: LeZmPXHuQEhkd8iZY7a2zVAwF7DCWir2FF
 
