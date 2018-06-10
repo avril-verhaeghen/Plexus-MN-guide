@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='plesxus.conf'
-CONFIGFOLDER='/root/.pleus'
-COIN_DAEMON='plesxusd'
-COIN_CLI='plesxus-cli'
+CONFIG_FILE='plexus.conf'
+CONFIGFOLDER='/root/.plexus'
+COIN_DAEMON='plexusd'
+COIN_CLI='plexus-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/altcuim/Plexus.git'
 COIN_TGZ='https://github.com/altcuim/Plexus/archive/V2.0.0.tar.gz'
