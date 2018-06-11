@@ -10,8 +10,8 @@ COIN_REPO='https://github.com/altcuim/Plexus.git'
 COIN_TGZ='https://github.com/altcuim/Plexus/archive/V2.0.0.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Plexus'
-COIN_PORT=12457
-RPC_PORT=12458
+COIN_PORT=31001
+RPC_PORT=31002
 
 NODEIP=$(curl -s4 icanhazip.com)
 
