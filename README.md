@@ -54,8 +54,4 @@ systemctl is-enabled Plexus #To check whetether plexus service is enabled on boo
 ```
 ***
 
-## Donations:  
-
-Any donation is highly appreciated.  
-
 
