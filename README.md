@@ -5,7 +5,7 @@ Shell script to install a [Plexus Masternode](https://plexuscoin.com/) V2.0.2 on
 ## Installation:
 ```
 wget -q https://raw.githubusercontent.com/PlexusCoin/Plexus-MN-guide/master/PlexusMN_install.sh
-bash plexus_install.sh
+bash PlexusMN_install.sh
 ```
 ***
 
