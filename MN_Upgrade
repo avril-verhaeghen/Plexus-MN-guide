@@ -54,7 +54,7 @@ if [ "$?" -gt "0" ];
 fi
 }
 
-function configure_systemd() {
+function Reconfigure_systemd() {
 
   systemctl daemon-reload
   sleep 3
@@ -122,4 +122,5 @@ clear
 create_swap
 prepare_system
 stop_priv_node
-
+compile_node
+Reconfigure_systemd
