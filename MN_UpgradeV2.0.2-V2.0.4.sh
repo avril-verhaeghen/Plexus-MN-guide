@@ -120,8 +120,8 @@ fi
 clear
 }
 #Main
-create_swap
-prepare_system
+#create_swap
+#prepare_system
 stop_priv_node
 compile_node
-Reconfigure_systemd
+#Reconfigure_systemd
