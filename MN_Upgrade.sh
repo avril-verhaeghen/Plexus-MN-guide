@@ -1,5 +1,5 @@
-SOURCE_FOLDER=$(mkdir Plexus_SRC)
-Source='Plexus_SRC'
+SOURCE_INIT=$(mkdir Plexus_SRC)
+SOURCE_FOLDER='Plexus_SRC'
 CONFIG_FILE='plexus.conf'
 CONFIGFOLDER='/root/.plexus'
 COIN_DAEMON='plexusd'
@@ -17,10 +17,10 @@ NC='\033[0m'
 
 function compile_node() {
   echo -e "Prepare to compile $COIN_NAME"
-  git clone $COIN_REPO $Source >/dev/null 2>&1
+  git clone $COIN_REPO $SOURCE_FOLDER >/dev/null 2>&1
   echo -e "Clone completed"
   compile_error
-  cd $Source
+  cd $SOURCE_FOLDER
   chmod +x ./autogen.sh 
   chmod +x ./share/genbuild.sh
   chmod +x ./src/leveldb/build_detect_platform
