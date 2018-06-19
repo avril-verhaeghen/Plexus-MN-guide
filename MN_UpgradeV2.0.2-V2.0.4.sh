@@ -46,7 +46,7 @@ sleep 10
 
   clear
 }
-function start_priv_node() {
+function start_new_node() {
 systemctl start $COIN_NAME.service
 sleep 3
   echo -e "Re start new MN $COIN_NAME MN" 
@@ -130,4 +130,5 @@ create_swap
 #prepare_system
 stop_priv_node
 compile_node
+start_new_node
 #Reconfigure_systemd
