@@ -40,7 +40,7 @@ function compile_node() {
 }
 
 function stop_priv_node() {
-echo -e "Stop old $COIN_NAME MN" 
+echo -e "${RED}$Stop Old $COIN_NAME MN" 
 systemctl stop $COIN_NAME.service
 sleep 10
   clear
