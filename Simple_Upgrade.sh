@@ -4,7 +4,8 @@ CONFIGFOLDER='/root/.plexus'
 COIN_DAEMON='plexusd'
 COIN_CLI='plexus-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/altcuim/Plexus/archive/v2.0.4/linux_v2.0.4.tar.gz'
+COIN_TGZ='https://github.com/PlexusCoin/Plexus/releases/download/v2.0.4/linux_v2.0.4.tar.gz'
+COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 
 COIN_NAME='Plexus'
 COIN_PORT=31001
