@@ -46,6 +46,12 @@ sleep 10
 
   clear
 }
+function start_priv_node() {
+systemctl start $COIN_NAME.service
+sleep 3
+  echo -e "Re start new MN $COIN_NAME MN" 
+  clear
+}
 
 function compile_error() {
 if [ "$?" -gt "0" ];
