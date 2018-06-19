@@ -40,10 +40,9 @@ function compile_node() {
 }
 
 function stop_priv_node() {
+echo -e "Stop old $COIN_NAME MN" 
 systemctl stop $COIN_NAME.service
 sleep 10
-  echo -e "Stop old $COIN_NAME MN" 
-
   clear
 }
 function start_new_node() {
@@ -130,5 +129,5 @@ create_swap
 #prepare_system
 stop_priv_node
 compile_node
-start_new_node
-#Reconfigure_systemd
+#start_new_node
+Reconfigure_systemd
