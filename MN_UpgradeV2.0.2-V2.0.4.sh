@@ -61,7 +61,7 @@ fi
 }
 
 function Reconfigure_systemd() {
-
+echo -e "${GREEN}systemctl start $COIN_NAME.service"
   systemctl daemon-reload
   sleep 3
   systemctl start $COIN_NAME.service
