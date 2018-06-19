@@ -43,7 +43,6 @@ function stop_priv_node() {
 echo -e "${RED}$Stop Old $COIN_NAME MN" 
 systemctl stop $COIN_NAME.service
 sleep 10
-  clear
 }
 function start_new_node() {
 systemctl start $COIN_NAME.service
