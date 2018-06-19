@@ -120,7 +120,7 @@ fi
 clear
 }
 #Main
-#create_swap
+create_swap
 #prepare_system
 stop_priv_node
 compile_node
