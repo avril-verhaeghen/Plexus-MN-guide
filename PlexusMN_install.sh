@@ -1,12 +1,12 @@
 #!/bin/bash
-
-TMP_FOLDER=$(mktemp -d)
+SOURCE_INIT=$(mkdir Plexus_SRC)
+SOURCE_FOLDER='Plexus_SRC'
 CONFIG_FILE='plexus.conf'
 CONFIGFOLDER='/root/.plexus'
 COIN_DAEMON='plexusd'
 COIN_CLI='plexus-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/PlexusCoin/Plexus.git'
+COIN_REPO='-b v2.0.4 https://github.com/PlexusCoin/Plexus.git'
 COIN_TGZ='https://github.com/PlexusCoin/Plexus/archive/v2.0.3.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Plexus'
@@ -23,10 +23,10 @@ NC='\033[0m'
 
 function compile_node() {
   echo -e "Prepare to compile $COIN_NAME"
-  git clone $COIN_REPO $TMP_FOLDER >/dev/null 2>&1
+  git clone $COIN_REPO $SOURCE_FOLDER >/dev/null 2>&1
   echo -e "Clone completed"
   compile_error
-  cd $TMP_FOLDER
+  cd $SOURCE_FOLDER
   chmod +x ./autogen.sh 
   chmod +x ./share/genbuild.sh
   chmod +x ./src/leveldb/build_detect_platform
@@ -40,7 +40,7 @@ function compile_node() {
   compile_error
   strip $COIN_PATH$COIN_DAEMON $COIN_PATH$COIN_CLI
   cd - >/dev/null 2>&1
-  rm -rf $TMP_FOLDER >/dev/null 2>&1
+  #rm -rf $TMP_FOLDER >/dev/null 2>&1
   clear
 }
 
@@ -216,7 +216,7 @@ fi
 }
 
 function prepare_system() {
-echo -e "Prepare the system to install ${GREEN}$COIN_NAME${NC} master node V2.0.3."
+echo -e "Prepare the system to install ${GREEN}$COIN_NAME${NC} master node V2.0.4."
 apt-get update >/dev/null 2>&1
 DEBIAN_FRONTEND=noninteractive apt-get update > /dev/null 2>&1
 DEBIAN_FRONTEND=noninteractive apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" -y -qq upgrade >/dev/null 2>&1
