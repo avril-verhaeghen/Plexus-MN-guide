@@ -5,7 +5,7 @@ CONFIGFOLDER='/root/.plexus'
 COIN_DAEMON='plexusd'
 COIN_CLI='plexus-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='-b https://github.com/PlexusCoin/Plexus.git'
+COIN_REPO='https://github.com/PlexusCoin/Plexus.git'
 
 COIN_NAME='Plexus'
 COIN_PORT=31001
