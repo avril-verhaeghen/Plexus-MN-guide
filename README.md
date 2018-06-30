@@ -35,7 +35,7 @@ Alias Address Privkey TxHash Output_index
 * Output index:  **Second value from Step 6**
 10. Save and close the file.
 11. Go to **Masternode Tab**. If you tab is not shown, please enable it from: **Settings - Options - Wallet - Show Masternodes Tab**
-12. Click **Update status** to see your node. If it is not shown, close the wallet and start it again. Make sure the wallet is un
+12. Click **Update status** to see your node. If it is not shown, close the wallet and start it again.
 13. Open **Debug Console** and type:
 ```
  masternode start-missing "MN1"
