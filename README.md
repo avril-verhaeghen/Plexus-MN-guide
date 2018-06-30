@@ -21,7 +21,7 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 3. Then go to the Send tab and in the Address field, paste in the address you just copied from the step above and send exactly **10000** **Plexus** to **MN1**.
 4. Go to transactions and and you will see the send you just did to yourself. By double clicking the transaction, you can see how many confirmations there are. Wait for 15 confirmations to complete before continuing with the steps below.
 5. Go to **Tools -> "Debug console - Console"**
-6. Type the following command: **masternode genkey** - this will generate the Private Key(privkey in masternode.conf file
+6. Type the following command: **masternode genkey** - this will generate the Private Key(privkey in masternode.conf file referenced below)
 7. Type the following command: **masternode outputs** - this will show you the transaction ID and the Output Index (TXHash and Output_index in the masternode.conf file referenced below)
 8. Go to  **Tools -> "Open Masternode Configuration File"** 
 9. Add the following entry(there is an example entry at the top of the file for guidance):
