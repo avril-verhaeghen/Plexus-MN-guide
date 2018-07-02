@@ -160,7 +160,7 @@ do
         echo -e "Please enter your ${RED}$COIN_NAME Masternode Private Key${NC}:"
          read -e COINKEY
 done
-        printf "Your Masternode Private Key: %s" "$COINKEY${NC}"
+        echo -e "Your Masternode Private Key: ${GREEN}$COINKEY${NC}"
 }
 
 function enable_firewall() {
