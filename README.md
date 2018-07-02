@@ -31,8 +31,8 @@ Alias Address Privkey TxHash Output_index
 * Alias: **MN1**
 * Address: **VPS_IP:PORT**
 * Privkey: **Masternode Private Key** - from step 6 above
-* TxHash: **First value from Step 6**
-* Output index:  **Second value from Step 6**
+* TxHash: **First value from Step 7**
+* Output index:  **Second value from Step 7**
 10. Save and close the file.
 11. Go to **Masternode Tab**. If you tab is not shown, please enable it from: **Settings - Options - Wallet - Show Masternodes Tab**
 12. Click **Update status** to see your node. If it is not shown, close the wallet and start it again.
