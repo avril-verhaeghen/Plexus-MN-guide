@@ -157,10 +157,10 @@ function create_key() {
   read -e COINKEY
   while [[ -z "$COINKEY" ]]
 do
-        echo -e "Enter your ${RED}$COIN_NAME Masternode Private Key${NC}:"
+        echo -e "Please enter your ${RED}$COIN_NAME Masternode Private Key${NC}:"
          read -e COINKEY
 done
-        printf "Your Masternode Private Key: %s " "$COINKEY"
+        printf "Your Masternode Private Key: %s" "$COINKEY${NC}"
 }
 
 function enable_firewall() {
