@@ -8,7 +8,7 @@ After you setup the VPS at your chosen provider, you will need to login as root 
 Using this script for x86_64 VPS:
 ```
 wget -q https://raw.githubusercontent.com/PlexusCoin/Plexus-MN-guide/master/MN_Install_x86_64_ubuntu16.sh
-bash PlexusMN_install.sh
+bash MN_Install_x86_64_ubuntu16.sh
 ```
 Or using this script if pre-build is not compatible with your VPS:
 ```
