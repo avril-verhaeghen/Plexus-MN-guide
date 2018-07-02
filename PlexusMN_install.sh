@@ -127,7 +127,7 @@ do
         echo -e "Please enter your ${RED}$COIN_NAME Masternode Private Key${NC}:"
          read -e COINKEY
 done
-        echo -e "Your Masternode Private Key: "${GREEN}$COINKEY${NC}"
+        echo -e "Your Masternode Private Key: ${GREEN}$COINKEY${NC}"
 }
 
 function update_config() {
