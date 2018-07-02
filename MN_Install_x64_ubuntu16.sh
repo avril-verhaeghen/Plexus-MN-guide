@@ -196,6 +196,6 @@ function setup_node() {
 
 #Main
 prepare_system
-//stop_priv_node
+#stop_priv_node
 download_node
 setup_node
