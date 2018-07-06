@@ -21,8 +21,6 @@ function configure_systemd() {
 Description=$COIN_NAME service
 After=network.target
 [Service]
-User=root
-Group=root
 Type=forking
 #PIDFile=$CONFIGFOLDER/$COIN_NAME.pid
 ExecStart=$COIN_PATH$COIN_DAEMON -daemon -conf=$CONFIGFOLDER/$CONFIG_FILE -datadir=$CONFIGFOLDER
@@ -141,7 +139,7 @@ function important_information() {
 
 function setup_node() {
   create_config
-  update_config
+  #update_config
   important_information
   configure_systemd
 }
