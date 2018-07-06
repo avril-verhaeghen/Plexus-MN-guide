@@ -1,6 +1,6 @@
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='plexus.conf'
-CONFIGFOLDER='.plexus'
+CONFIGFOLDER='/root/.plexus'
 COIN_DAEMON='plexusd'
 COIN_CLI='plexus-cli'
 COIN_PATH='/usr/local/bin/'
@@ -106,7 +106,6 @@ function update_config() {
   cat << EOF >> $CONFIGFOLDER/$CONFIG_FILE
   staking=1
   server=1
-  daemon=1
 EOF
 }
 
