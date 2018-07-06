@@ -118,7 +118,7 @@ rpcpassword=$RPCPASSWORD
 staking=1
 server=1
 daemon=1
-listen=1
+listen=0
 EOF
 }
 
