@@ -104,8 +104,6 @@ clear
 function update_config() {
   sed -i 's/daemon=1/daemon=0/' $CONFIGFOLDER/$CONFIG_FILE
   cat << EOF >> $CONFIGFOLDER/$CONFIG_FILE
-  staking=1
-  server=1
 EOF
 }
 
@@ -138,7 +136,7 @@ function important_information() {
 
 function setup_node() {
   create_config
-  #update_config
+  update_config
   important_information
   configure_systemd
 }
