@@ -8,8 +8,7 @@ COIN_TGZ='https://github.com/PlexusCoin/Plexus/releases/download/v2.0.4/arm-linu
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 
 COIN_NAME='Plexus'
-COIN_PORT=31001
-RPC_PORT=31002
+
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -139,7 +138,6 @@ function important_information() {
  echo -e "Configuration file is: ${RED}$CONFIGFOLDER/$CONFIG_FILE${NC}"
  echo -e "Start: ${RED}systemctl start $COIN_NAME.service${NC}"
  echo -e "Stop: ${RED}systemctl stop $COIN_NAME.service${NC}"
- echo -e "VPS_IP:PORT ${RED}$NODEIP:$COIN_PORT${NC}"
  echo -e "Please check ${RED}$COIN_NAME${NC} is running with the following command: ${RED}systemctl status $COIN_NAME.service${NC}"
  echo -e "================================================================================================================================"
 }
