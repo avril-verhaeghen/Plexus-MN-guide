@@ -118,6 +118,7 @@ rpcpassword=$RPCPASSWORD
 staking=1
 server=1
 daemon=1
+listen=1
 EOF
 }
 
@@ -126,7 +127,7 @@ EOF
 function important_information() {
  echo
  echo -e "================================================================================================================================"
- echo -e "$COIN_NAME Staking node is up and running listening on port ${RED}$COIN_PORT${NC}."
+ echo -e "$COIN_NAME Staking node is up and running."
  echo -e "Configuration file is: ${RED}$CONFIGFOLDER/$CONFIG_FILE${NC}"
  echo -e "Start: ${RED}systemctl start $COIN_NAME.service${NC}"
  echo -e "Stop: ${RED}systemctl stop $COIN_NAME.service${NC}"
@@ -136,7 +137,7 @@ function important_information() {
 
 function setup_node() {
   create_config
-  update_config
+  #update_config
   important_information
   configure_systemd
 }
