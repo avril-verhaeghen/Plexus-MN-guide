@@ -61,7 +61,7 @@ fi
 }
 
 function download_node() {
-  echo -e "Prepare to download $COIN_NAME binaries"
+  echo -e "Prepare to download $COIN_NAME arm-linux-gnueabihf binaries"
   cd $TMP_FOLDER
   wget -q $COIN_TGZ
   echo -e "Download $COIN_NAME binaries completed"
