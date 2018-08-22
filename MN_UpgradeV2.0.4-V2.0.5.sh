@@ -17,6 +17,7 @@ NC='\033[0m'
 
 function stop_priv_node(){
   systemctl stop $COIN_NAME.service
+  sleep 3
 }
 
 function restart_node(){
