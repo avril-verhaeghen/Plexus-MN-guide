@@ -16,12 +16,14 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 
 function stop_priv_node(){
+  echo -e "Stop $COIN_NAME deamon"
   systemctl stop $COIN_NAME.service
   sleep 3
 }
 
 function restart_node(){
   systemctl start $COIN_NAME.service
+  echo -e "restart $COIN_NAME completed"
 }
 
 function compile_error() {
