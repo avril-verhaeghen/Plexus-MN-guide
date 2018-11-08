@@ -4,7 +4,8 @@ CONFIGFOLDER='/root/.delor'
 COIN_DAEMON='delord'
 COIN_CLI='delor-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='delor-arm-linux-gnueabihf.tar.gz'
+#COIN_TGZ='delor-arm-linux-gnueabihf.tar.gz'
+COIN_TGZ='https://github.com/avril-verhaeghen/Plexus-MN-guide/blob/master/InstallStaking-arm-linux-gnueabihf.sh'
 #COIN_TGZ='https://github.com/avril-verhaghen/Plexus-MN-guide/releases/download/V2.0.5/arm-linux-gnueabihf.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 
